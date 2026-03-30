@@ -56,12 +56,11 @@ A -- B    C -- D    E
      \
       F
 ```
-In this graph:
-- {A,B,F} forms a maximal connected subgraph because:
-  - All vertices can reach each other
-  - Adding any other vertex (C,D,E) would break connectivity
-- {C,D} forms another maximal connected subgraph
-- {E} forms a single-vertex component
+- {A,B,F} is a maximal connected subgraph because every pair of its vertices is connected by a path, and no additional vertex from the graph can be included while keeping the subgraph connected.
+- {C,D} is another maximal connected subgraph.
+- {E} is also a connected component by itself, since a single vertex is connected trivially.
+
+So the graph has 3 connected components.
 
 ---
 
@@ -75,8 +74,6 @@ This example shows three distinct connected components:
 - **Component 1**: A complete graph (K3) where all nodes are connected to each other
 - **Component 2**: A star-like structure with a central node connected to multiple leaves
 - **Component 3**: A path graph showing a linear connection pattern
-
-Each component is colored differently to highlight the separation between subgraphs.
 
 ---
 
